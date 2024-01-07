@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Tags</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header {
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        #main {
+            float: left;
+            width: 69%;
+        }
+        #sidebar{
+           float: right;
+           width: 29%; 
+        }
+        .clr{
+            clear: both;
+        }
+        #footer{
+            background:#333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .text-center{
+           display:block;
+           text-align:center;
+        }
+
+        .card{
+           border:1px solid #ddd;
+           background:#f4f4f4;
+           padding:20px;
+           margin-bottom:10px;
+        }
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="card">
+        <h1>my website</h1>
+        <p>Just Another Website</p>
+    </header>
+    <!-- Main Content (left) -->
+    <main id="main">
+        <!--Welcome Section -->
+        <section id="welcome" class="card">
+            <h2>Welcome To Our Website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officiis sit vitae earum eum laborum nemo laboriosam nesciunt quibusdam laudantium. <br> <a href="#" class="text-center">Click For More</a></p>
+        </section>
+        <!-- Blog Section -->
+        <section id="blog">
+        <h2>From Our Blog</h2>
+        <!-- Article one -->
+        <article class="article">
+         <h3>Article one</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, rem!</p>
+    </article>
+    <!-- Article Two -->
+    <article class="article">
+        <h3>Article Two</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, sit.
+        </p>
+      </article>
+    </section>
+</main>
+
+    <!-- Sidebar (right) -->
+    <aside id="sidebar" class="card">
+        <h3>Navigation</h3>
+        <!-- Navigation -->
+        <nav>
+        <ul id="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>  
+        </ul>
+    </nav>
+        <hr>
+        <ul>
+            <li><strong>Address:</strong> 40 Aderoju street</li>
+            <li><strong>Phone:</strong>09167067700 </li>
+            <li><strong>Email:</strong>abdulazeezbabatunde10@gmail.com </li>
+        </ul>
+    </aside>
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">copyright &copy; my website 2023</p>
+    </footer>
+</body>
+</html>
